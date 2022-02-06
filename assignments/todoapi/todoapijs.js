@@ -1,4 +1,4 @@
-console.log("todo")
+//console.log("todo")
 // let cbtn=document.getElementById("completebtn")
 // let pbtn=document.getElementById("pendingbtn")
 // cbtn.addEventListener('click',completefun())
