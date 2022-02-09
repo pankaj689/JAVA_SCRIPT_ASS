@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .screen{height: 100%;
+            width: 100%;}
+    .button {border: 5px solid blue;
+             height: 60px;        }
+    .item { border: 5px solid red;}
+    .complete { border: 5px solid violet;
+                float: right;}
+    .pending {border: 5px solid yellow;
+                      }
+    .list1 {border: 5px solid green;
+            margin-top: 0%;}
+    .list2 { border: solid rebeccapurple;}
+        
+    </style>
+</head>
+
+<body>
+<div  class="screen">    
+    <div class="button" style="display: block;">
+        <div class="complete" style="display: inline-block;">
+            <button onclick=completefun() id="completebtn">complete</button>
+        </div>
+        <div class="pending" style="display: inline-block;">
+            <button  onclick=pendfun()  id="pendingbtn">pending</button>
+        </div>
+    </div>
+    <div class="item" style="display: block;">
+        <div class="list1" style="display: inline-block;">
+            <ul id="comlist" style="list-style-type:none;" ></ul>   
+        </div>
+        <div class="list2" style="display: inline-block;">
+            <ul id="penlist" style="list-style-type:none;" ></ul>
+        </div>
+    </div>
+</div>
+</body>
+<script src="todoapijs.js"></script>
+
+</html>
